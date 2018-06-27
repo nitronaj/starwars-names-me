@@ -1,0 +1,41 @@
+{
+  "name": "startwars-name",
+  "version": "1.0.0",
+  "description": "For all your random Star Wars character needs",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "jest",
+    "watch:test": "jest -o",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitronaj/starwars-names.git"
+  },
+  "keywords": [
+    "star",
+    "wars"
+  ],
+  "author": "Nader Agha Jafari <nader.jafari@healthdirect.org.au>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nitronaj/starwars-names/issues"
+  },
+  "homepage": "https://github.com/nitronaj/starwars-names#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-kentcdodds": "^13.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.2.0",
+    "mocha": "^5.2.0"
+  }
+}
