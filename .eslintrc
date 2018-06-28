@@ -11,9 +11,6 @@
     "commonjs": true,
     "jest/globals": true
   },
-  "ecmaFeatures": {
-    "modules": true
-  },
   "parserOptions": {
     "ecmaVersion": 2017
   },
