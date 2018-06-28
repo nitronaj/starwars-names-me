@@ -6,12 +6,12 @@
   "scripts": {
     "lint": "eslint src",
     "test": "jest",
-    "watch:test": "jest -o",
+    "watch:test": "jest --watch",
     "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nitronaj/starwars-names.git"
+    "url": "git+https://github.com/nitronaj/starwars-names-me.git"
   },
   "keywords": [
     "star",
@@ -20,9 +20,9 @@
   "author": "Nader Agha Jafari <nader.jafari@healthdirect.org.au>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nitronaj/starwars-names/issues"
+    "url": "https://github.com/nitronaj/starwars-names-me/issues"
   },
-  "homepage": "https://github.com/nitronaj/starwars-names#readme",
+  "homepage": "https://github.com/nitronaj/starwars-names-me#readme",
   "dependencies": {
     "unique-random-array": "1.0.1"
   },
