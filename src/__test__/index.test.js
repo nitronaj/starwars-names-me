@@ -1,4 +1,4 @@
-const starWarsNames = require('../index');
+import starWarsNames from '../index';
 
 function isArrayOfStrings(array) {
   return array.every(item => typeof item === 'string');
