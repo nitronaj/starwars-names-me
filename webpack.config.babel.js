@@ -1,13 +1,17 @@
 import path from 'path';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 
-export default {
+module.exports = {
   mode: 'development',
   entry: path.join(__dirname, 'src', 'index'),
   output: {
-    filename: 'bundle.js',
+    filename: 'index.umd.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'starWarsNames',
+    library: 'myStarWarsNames',
     libraryTarget: 'umd',
+    libraryExport: 'default',
+    umdNamedDefine: true,
+    globalObject: 'typeof self !== \'undefined\' ? self : this',
   },
   module: {
     rules: [
@@ -20,11 +24,6 @@ export default {
         ],
         loader: 'babel-loader',
       },
-      {
-        test: /.json$/,
-        include: [path.resolve(__dirname, 'src')],
-        loader: 'json',
-      },
     ],
   },
   resolve: {
@@ -34,4 +33,5 @@ export default {
   devServer: {
     publicPath: path.join('/dist/'),
   },
+  // plugins: [new CleanWebpackPlugin(['dist'])],
 };
