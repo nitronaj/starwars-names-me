@@ -27,3 +27,5 @@ Travis runing npm run validate
 ```shell
   npm-run-all --parallel lint test build
 ```
+
+[![Build Status](https://travis-ci.org/nitronaj/starwars-names-me.svg?branch=master)](https://travis-ci.org/nitronaj/starwars-names-me)

@@ -11,6 +11,7 @@
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "lint": "eslint src",
     "test": "jest",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "watch:test": "jest --watch",
     "validate": "npm-run-all --parallel lint test build"
   },
@@ -40,6 +41,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
+    "codecov": "^3.0.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
